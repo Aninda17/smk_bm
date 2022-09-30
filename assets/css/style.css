@@ -1,5 +1,5 @@
 /**
-* Template Name: BizPage - v5.10.0
+* Template Name: BizPage - v5.9.1
 * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
@@ -130,7 +130,7 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(235, 11, 11);
   height: 80px;
 }
 
@@ -139,8 +139,20 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgb(252, 248, 248);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   height: 60px;
+  
+}
+
+#header.header-scrolled .navbar a{
+  color: #000;
+}
+#header.header-scrolled .navbar a:hover,
+#header.header-scrolled .navbar .active,
+#header.header-scrolled .navbar .active:focus,
+#header.header-scrolled .navbar li:hover>a {
+  color: #28a745;
 }
 
 #header .logo {
@@ -216,7 +228,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #18d26e;
+  color: #28a745;
 }
 
 .navbar .dropdown ul {
@@ -271,6 +283,11 @@ h6 {
   top: 0;
   left: 100%;
   visibility: visible;
+}
+#hero .tulisan{
+ text-align:left; 
+ margin-bottom:180px;
+ margin-left: -88px;
 }
 
 @media (max-width: 1366px) {
@@ -402,7 +419,8 @@ h6 {
 @media (max-height: 500px) {
   #hero {
     height: 150vh;
-  }
+  } 
+
 }
 
 #hero .carousel,
@@ -442,6 +460,8 @@ h6 {
   text-align: center;
 }
 
+
+
 #hero h2 {
   color: #fff;
   margin-bottom: 30px;
@@ -452,6 +472,9 @@ h6 {
 @media (max-width: 768px) {
   #hero h2 {
     font-size: 28px;
+  }
+    #hero .tulisan {
+     margin-left: -10px;
   }
 }
 
@@ -518,6 +541,7 @@ h6 {
 
 #hero .carousel-indicators li {
   cursor: pointer;
+  margin-top: -100px;
 }
 
 #hero .btn-get-started {
@@ -537,6 +561,70 @@ h6 {
 #hero .btn-get-started:hover {
   background: #fff;
   color: #18d26e;
+}
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us .content {
+  padding: 30px;
+  background: #1977cc;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.why-us .content h3 {
+  font-weight: 700;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.why-us .content p {
+  margin-bottom: 30px;
+}
+
+.why-us .content .more-btn {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 30px 8px 30px;
+  color: #fff;
+  border-radius: 50px;
+  transition: all ease-in-out 0.4s;
+}
+
+.why-us .content .more-btn i {
+  font-size: 14px;
+}
+
+.why-us .content .more-btn:hover {
+  color: #1977cc;
+  background: #fff;
+}
+
+.why-us .icon-boxes .icon-box {
+  text-align: center;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 40px 30px;
+  width: 100%;
+}
+
+.why-us .icon-boxes .icon-box i {
+  font-size: 40px;
+  color: #1977cc;
+  margin-bottom: 30px;
+}
+
+.why-us .icon-boxes .icon-box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+.why-us .icon-boxes .icon-box p {
+  font-size: 15px;
+  color: #848484;
 }
 
 /*--------------------------------------------------------------
@@ -773,7 +861,7 @@ section {
 }
 
 #about .about-col p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 24px;
   color: #333;
   margin-bottom: 0;
@@ -783,13 +871,14 @@ section {
 /* Services Section
 --------------------------------*/
 #services {
-  background: #fff;
+  background: #f0f5f2;
   background-size: cover;
-  padding: 60px 0 40px 0;
+  padding: 0px 0 40px 0;
 }
 
 #services .box {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+
 }
 
 #services .icon {
@@ -807,28 +896,45 @@ section {
   margin-left: 60px;
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 20px;
+  padding-top: 20px;
 }
 
 #services .title a {
   color: #111;
+  text-align: center;
 }
 
 #services .box:hover .title a {
-  color: #18d26e;
+  color: #3bbfb6;
+  text-decoration: underline;
+}
+
+#services .box:hover .jdl a {
+  color: #f0f5f2;
+}
+
+#services .box .jdl a {
+  margin-left: -65px;
 }
 
 #services .description {
   font-size: 14px;
   margin-left: 60px;
+  margin-right: 60px;
   line-height: 24px;
-  margin-bottom: 0;
+  margin-bottom: 0px;
+
+}
+
+#services .wow {
+  padding-top: 50px;
 }
 
 /* Call To Action Section
 --------------------------------*/
 #call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(../img/call-to-action-bg.jpg) fixed center center;
+  background: linear-gradient(rgba(27, 155, 116, 1), rgba(0, 0, 0, 0.22)), url(../img/g1.jpeg) fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -837,10 +943,14 @@ section {
   color: #fff;
   font-size: 28px;
   font-weight: 700;
+  text-align: center;
 }
 
 #call-to-action p {
   color: #fff;
+  margin-top: 25px;
+  font-size: 15px;
+  margin-left:-130px;
 }
 
 #call-to-action .cta-btn {
@@ -856,6 +966,7 @@ section {
   margin-top: 10px;
   border: 2px solid #fff;
   color: #fff;
+  text-decoration: none;
 }
 
 #call-to-action .cta-btn:hover {
@@ -1280,10 +1391,15 @@ section {
   padding: 60px 0;
 }
 
+#team .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
 #team .member {
   text-align: center;
   margin-bottom: 20px;
-  background: #000;
+  background: #ffff;
   position: relative;
 }
 
@@ -1309,6 +1425,7 @@ section {
   background: rgba(0, 0, 0, 0.7);
   opacity: 1;
   transition: 0.4s;
+  border-radius: 27px;
 }
 
 #team .member:hover .member-info-content {
@@ -1330,17 +1447,17 @@ section {
   color: #fff;
 }
 
-#team .member .social {
+#team .member .social  {
   margin-top: 15px;
 }
 
 #team .member .social a {
   transition: none;
-  color: #fff;
+  color: #34eb61;
 }
 
 #team .member .social a:hover {
-  color: #18d26e;
+  color: #ffff;
 }
 
 #team .member .social i {
