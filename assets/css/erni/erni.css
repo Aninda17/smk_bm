@@ -131,7 +131,7 @@ src:url('data:application/font-woff;charset=utf-8;base64, d09GRgABAAAAAAZgABAAAA
   background-color: #3bbfb6;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) (min-width: 576px) {
   .slide-content{
     margin: 0 10px;
   }
