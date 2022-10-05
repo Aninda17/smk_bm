@@ -4,3 +4,17 @@
     height:250px;
     margin-left: 150px;
 }
+@media (max-width: 767.98px) { 
+ 	#call-to-action .container .row .konten{
+ 		margin: 0px 10px;
+ 		padding-left: 140px;
+ 		padding-right: 40px;
+ 		width: 680px;
+ 		text-align: justify;
+ 	}
+	#call-to-action .container img{
+		height: 200px;
+		margin-left: 60px;
+		justify-content: center;
+	}
+ }
